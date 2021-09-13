@@ -4884,6 +4884,6 @@ for _ in range(int(input())):
 
 [1]. Siru Chen, 20171226-Codeforces-top100_good-solution.pdf
 
-[2]. PKU-CS101 Student assignments, fall 2020.
+[2]. PKU-cs101 student assignments, fall 2020.
 
 [3]. https://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/
