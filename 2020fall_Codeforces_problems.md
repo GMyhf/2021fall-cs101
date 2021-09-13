@@ -4,7 +4,7 @@
 
 # Problems in Codeforces.com
 
-2020 fall, Complied by Hongfei Yan
+2021 fall, Complied by Hongfei Yan
 
 ==**How to find the problems?**==
 Visit http://codeforces.com/, click 'PROBLEMSET', then click green checkmark (order=BY_SOLVED_DESC). That is, click http://codeforces.com/problemset?order=BY_SOLVED_DESC.
@@ -4884,6 +4884,6 @@ for _ in range(int(input())):
 
 [1]. Siru Chen, 20171226-Codeforces-top100_good-solution.pdf
 
-[2]. Student assignments, fall 2020.
+[2]. PKU-CS101 Student assignments, fall 2020.
 
 [3]. https://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/
