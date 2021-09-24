@@ -42,7 +42,7 @@ A:
 
 闫：https://www.runoob.com/cplusplus/cpp-data-types.html
 
-<img src="C:\Users\joy\AppData\Roaming\Typora\typora-user-images\image-20210913195255228.png" alt="image-20210913195255228" style="zoom: 50%;" />
+<img src="https://i.loli.net/2021/09/24/nU6OzDtdG78Pf1H.png" alt="image-20210913195255228" style="zoom: 50%;" />
 
 
 
