@@ -1,19 +1,21 @@
 """
 algorithm_analysis.py
 
+updated on Jun. 15, 2022 by Hongfei Yan
+
+
 Description:
 
 A utility program to plot algorithmic time complexity of a function.
 
 Author: Mahesh Venkitachalam
-    modified by Hongfei Yan
 
 Website: electronut.in
 http://electronut.in/plotting-algorithmic-time-complexity-of-a-function-using-python/
 """
  
 import matplotlib.pyplot as plt
-import numpy as np
+#import numpy as np
 import timeit
 import math
 from functools import partial
@@ -24,19 +26,19 @@ def Constant(N):
     """
     O(1) function
     """
-    x = 1
+    _ = 1
 
 def Logarithmic(N):
-    x = [i for i in range( int(math.log2(N)) )]
+    _ = [i for i in range( int(math.log2(N)) )]
  
 def Linear(N):
     """
     O(n) function
     """
-    x = [i for i in range(N)]
+    _ = [i for i in range(N)]
 
 def N_Log_N(N):
-	x = [i for i in range(N* int(math.log2(N)))]
+	_ = [i for i in range(N* int(math.log2(N)))]
     #for i in range(N)
     #    for i in range( int(math.log2(N)) )
     #        x = 1
@@ -45,7 +47,7 @@ def Quadratic(N):
 	"""
 	O(n^2) function
 	"""
-	x = [i for i in range(int(math.pow(N, 2)))]
+	_ = [i for i in range(int(math.pow(N, 2)))]
     #for i in range(N):
 	#	for j in range(N):
 	#		x = 1
@@ -54,7 +56,7 @@ def Cubic(N):
 	"""
 	O(n^3) function
 	"""
-	x = [i for i in range(int(math.pow(N, 3)))]
+	_ = [i for i in range(int(math.pow(N, 3)))]
     
 	#for i in range(N):
 	#	for j in range(N):
@@ -63,7 +65,7 @@ def Cubic(N):
 
 
 def Exponential(N):
-	x = [i for i in range(int(math.pow(2, N)))]
+	_ = [i for i in range(int(math.pow(2, N)))]
 
 def fshuffle(N):
     # O(N)
@@ -99,10 +101,10 @@ def plotTC(fn, nMin, nMax, nInc, nTests):
 def main():
     print('Analyzing Algorithms...')
  
-    upbound = 24
+    upbound = 100
     step = 1
     seven_functions = [Constant,Logarithmic,Linear,N_Log_N,Quadratic,Cubic,Exponential]
-    for i in seven_functions:
+    for i in seven_functions[:-1]:  # skip Exponential due to too expensive
         plotTC(i, 10, upbound, step, 10)
     
     '''
