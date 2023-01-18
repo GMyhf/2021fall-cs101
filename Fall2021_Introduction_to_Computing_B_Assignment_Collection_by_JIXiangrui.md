@@ -250,6 +250,7 @@ for i in range(t):
 http://codeforces.com/problemset/problem/112/A
 
 解题思路：Python会通过依次比较字符的Unicode 编码来比较字符串的大小。题目要求不区分大小写，因此先把字符串统一转成小写。
+参考：https://docs.python.org/3/reference/expressions.html#comparisons，https://docs.python.org/3/library/stdtypes.html，https://docs.python.org/3/library/functions.html
 
 ```python
 a = input().lower()
@@ -421,6 +422,7 @@ print('+'.join(sorted(input().split('+'))))
 ```
 
 补充：sort()和sorted()使用的排序算法是Timsort，时间和空间复杂度如下表。
+参考：https://en.wikipedia.org/wiki/Timsort
 
 | Worst-case performance | Best-case performance | Average performance | Worst-case space complexity |
 | ---------------------- | --------------------- | ------------------- | --------------------------- |
@@ -2345,6 +2347,8 @@ print('{:.1f}'.format(v))
  ```
 
 注：第14行，格式化后输出，参见https://www.runoob.com/python/att-string-format.html。round()是“四舍六入五取偶”，例如round(0.5)的结果是0，round(1.5)的结果是2。但还可能出现奇怪的结果，例如round(2.675, 2)的结果2.67。在机器中浮点数不一定能精确表达，因为换算成一串1和0后可能是无限位的，机器已做了截断处理。在机器中保存的2.675这个数比实际值要小一点点，这就导致了它离2.67要更近一点点，所以近似成了2.67。因此，尽量避免用round()。
+
+参考：https://www.runoob.com/w3cnote/python-round-func-note.html
 
 易错点：每箱糖果是可任意拆分的。
 
